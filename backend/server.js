@@ -1,6 +1,11 @@
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -371,6 +376,14 @@ app.delete('/api/cart/:id', (req, res) => {
 app.post('/api/cart/checkout', (req, res) => {
     cart = [];
     res.json({ success: true, message: "Order Placed Successfully!" });
+});
+
+// Serve static files from React build
+app.use(express.static(path.join(__dirname, '../dist')));
+
+// All other routes return React app (for client-side routing)
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 app.listen(PORT, () => {
