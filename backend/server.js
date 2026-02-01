@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/ecommerce';
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb+srv://sameer63031_db_user:k3gzmSeu28EqcCQw@cluster0.bhfxjod.mongodb.net/ecommerce?appName=Cluster0';
 mongoose.connect(MONGO_URI)
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
