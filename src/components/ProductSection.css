@@ -1,0 +1,48 @@
+.product-section {
+    background-color: #fff;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+}
+
+.section-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.view-all-btn {
+    background-color: #2874f0;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.products-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+/* Hide scrollbar for a cleaner look but allow scrolling */
+.products-container::-webkit-scrollbar {
+    height: 4px;
+}
+
+.products-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 2px;
+}
+
+.products-container::-webkit-scrollbar-track {
+    background: transparent;
+}

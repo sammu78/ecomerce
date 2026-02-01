@@ -1,0 +1,86 @@
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal {
+    background: #fff;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    font-size: 24px;
+    color: #878787;
+    z-index: 10;
+}
+
+.login-left {
+    background-color: #2874f0;
+    color: #fff;
+    padding: 40px 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-left h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.login-left p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #dbdbdb;
+}
+
+.login-right {
+    padding: 50px 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login-right input {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.login-right input:focus {
+    border-bottom: 1px solid #2874f0;
+}
+
+.login-submit-btn {
+    background: #fb641b;
+    color: #fff;
+    height: 48px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}

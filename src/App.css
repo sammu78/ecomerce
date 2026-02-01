@@ -1,0 +1,8 @@
+/* App level styles if needed, mostly handled by components and index.css */
+.main-content {
+  margin-top: 64px;
+  /* Height of header */
+  padding: 8px;
+  max-width: 100%;
+  overflow-x: hidden;
+}

@@ -1,0 +1,25 @@
+.home-container {
+    background-color: var(--bg-grey);
+    min-height: calc(100vh - 56px);
+    width: 100%;
+}
+
+.hero-banner {
+    padding: 10px;
+    width: 100%;
+    /* display: flex; center if needed, but width 100% does it */
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    max-height: 280px;
+    /* Limit height roughly */
+}
+
+.content-wrapper {
+    padding: 0 10px 10px 10px;
+    /* Slight padding on sides */
+}
