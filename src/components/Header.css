@@ -256,3 +256,140 @@
     /* Playful cart animation */
     fill: #ffe500;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 0 8px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .search-bar {
+        max-width: 350px;
+        margin: 0 8px;
+    }
+
+    .login-btn {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile (< 768px) */
+@media (max-width: 767px) {
+    .header {
+        height: 56px;
+    }
+
+    .header-container {
+        padding: 0 8px;
+        justify-content: space-between;
+    }
+
+    .logo-section {
+        margin-right: 8px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .explore-plus {
+        font-size: 9px;
+    }
+
+    /* Hide search bar on mobile, can be toggled */
+    .search-bar {
+        display: none;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        z-index: 999;
+    }
+
+    .search-bar.active {
+        display: flex;
+    }
+
+    /* Simplify navigation on mobile */
+    .login-btn-container {
+        margin: 0 8px;
+    }
+
+    .login-btn {
+        padding: 4px 12px;
+        font-size: 12px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    /* Hide "More" dropdown text on mobile, show only icon */
+    .dropdown-label span {
+        display: none;
+    }
+
+    .dropdown-icon {
+        margin-left: 0;
+    }
+
+    /* Adjust dropdown menu for mobile */
+    .dropdown-menu {
+        width: 150px;
+        right: 0;
+        left: auto;
+        transform: none;
+    }
+
+    .dropdown-menu::before {
+        left: auto;
+        right: 20px;
+        transform: none;
+    }
+
+    /* Make cart text shorter on mobile */
+    .nav-item .cart-text {
+        display: none;
+    }
+
+    .cart-icon {
+        margin-right: 0;
+    }
+}
+
+/* Extra small mobile (< 375px) */
+@media (max-width: 374px) {
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .explore-plus {
+        display: none;
+    }
+
+    .login-btn {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+
+    .nav-links {
+        gap: 8px;
+        font-size: 12px;
+    }
+}

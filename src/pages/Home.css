@@ -23,3 +23,55 @@
     padding: 0 10px 10px 10px;
     /* Slight padding on sides */
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero-banner {
+        padding: 8px;
+    }
+
+    .banner-img {
+        max-height: 240px;
+    }
+
+    .content-wrapper {
+        padding: 0 8px 8px 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .home-container {
+        min-height: calc(100vh - 56px);
+    }
+
+    .hero-banner {
+        padding: 6px;
+    }
+
+    .banner-img {
+        max-height: 180px;
+        border-radius: 4px;
+    }
+
+    .content-wrapper {
+        padding: 0 6px 6px 6px;
+    }
+}
+
+/* Extra small mobile */
+@media (max-width: 374px) {
+    .hero-banner {
+        padding: 4px;
+    }
+
+    .banner-img {
+        max-height: 140px;
+    }
+
+    .content-wrapper {
+        padding: 0 4px 4px 4px;
+    }
+}

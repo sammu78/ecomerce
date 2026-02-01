@@ -6,6 +6,13 @@
   --border-grey: #f0f0f0;
   --green-rating: #388e3c;
   --yellow-star: #fff;
+
+  /* Responsive breakpoints */
+  --mobile-max: 767px;
+  --tablet-min: 768px;
+  --tablet-max: 1024px;
+  --desktop-min: 1025px;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -39,6 +46,8 @@ button {
   border-radius: 2px;
   cursor: pointer;
   font-family: inherit;
+  /* Minimum touch target size for mobile */
+  min-height: 44px;
 }
 
 input {
@@ -50,4 +59,23 @@ input {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+/* Responsive utility classes */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
 }

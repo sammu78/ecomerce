@@ -48,3 +48,57 @@
     color: #212121;
     text-align: center;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    .category-container {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .category-item {
+        min-width: 70px;
+        padding: 0 8px;
+    }
+
+    .category-img-container {
+        height: 56px;
+        width: 56px;
+    }
+
+    .category-text {
+        font-size: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .category-bar {
+        padding: 10px 4px;
+    }
+
+    .category-container {
+        gap: 4px;
+        padding: 0 4px;
+        /* Enable smooth scrolling */
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .category-item {
+        min-width: 60px;
+        padding: 0 6px;
+    }
+
+    .category-img-container {
+        height: 48px;
+        width: 48px;
+    }
+
+    .category-text {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+}

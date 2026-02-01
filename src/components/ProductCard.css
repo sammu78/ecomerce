@@ -119,3 +119,93 @@
     font-size: 12px;
     font-weight: 500;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .product-card {
+        width: 180px;
+        padding: 14px;
+    }
+
+    .product-img-container {
+        height: 130px;
+    }
+
+    .product-title {
+        font-size: 13px;
+    }
+
+    .product-price {
+        font-size: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .product-card {
+        width: 160px;
+        padding: 12px;
+        min-width: 140px;
+    }
+
+    .product-img-container {
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .product-title {
+        font-size: 12px;
+    }
+
+    .product-subtitle {
+        font-size: 11px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+    .product-mrp {
+        font-size: 12px;
+    }
+
+    .product-discount {
+        font-size: 12px;
+    }
+
+    .free-delivery {
+        font-size: 11px;
+    }
+
+    .rating-badge {
+        font-size: 11px;
+        padding: 2px 3px 2px 5px;
+    }
+
+    .rating-count {
+        font-size: 11px;
+    }
+}
+
+/* Extra small mobile */
+@media (max-width: 374px) {
+    .product-card {
+        width: 140px;
+        padding: 10px;
+        min-width: 130px;
+    }
+
+    .product-img-container {
+        height: 100px;
+    }
+
+    .product-title {
+        font-size: 11px;
+    }
+
+    .product-price {
+        font-size: 13px;
+    }
+}

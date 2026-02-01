@@ -46,3 +46,63 @@
 .products-container::-webkit-scrollbar-track {
     background: transparent;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .section-header {
+        padding: 12px 16px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .view-all-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .products-container {
+        padding: 8px 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .product-section {
+        margin: 8px 0;
+    }
+
+    .section-header {
+        padding: 10px 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .section-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .view-all-btn {
+        padding: 6px 14px;
+        font-size: 13px;
+        align-self: flex-end;
+    }
+
+    .products-container {
+        padding: 8px 4px;
+        gap: 8px;
+        /* Better scrolling on mobile */
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Show scrollbar on mobile for better UX */
+    .products-container::-webkit-scrollbar {
+        height: 6px;
+    }
+}
