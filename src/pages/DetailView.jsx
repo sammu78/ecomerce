@@ -35,7 +35,7 @@ const DetailView = () => {
         <div className="container">
             <div className="component">
                 <div className="left-container">
-                    <img src={product.detailUrl || product.url} alt={product.title.longTitle} className="detail-image" referrerPolicy="no-referrer" />
+                    <img src={product.detailUrl || product.url} alt={product.title.longTitle} className="detail-image" />
                     <div className="button-container">
                         <button className="buy-btn cart-btn" onClick={() => addToCart(product)}>ADD TO CART</button>
                         <button className="buy-btn buy-now-btn" onClick={handleBuyNow}>BUY NOW</button>

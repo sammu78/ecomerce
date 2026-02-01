@@ -15,7 +15,6 @@ const CategoryBar = () => {
                                 src={category.image}
                                 alt={category.name}
                                 className="category-img"
-                                referrerPolicy="no-referrer"
                             />
                         </div>
                         <p className="category-text">{category.name}</p>

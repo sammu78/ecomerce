@@ -47,7 +47,7 @@ const Cart = () => {
                         {cart.map((item, index) => (
                             <div key={index} className="cart-item">
                                 <div className="item-left">
-                                    <img src={item.url} alt={item.title.shortTitle} className="item-img" referrerPolicy="no-referrer" />
+                                    <img src={item.url} alt={item.title.shortTitle} className="item-img" />
                                 </div>
                                 <div className="item-right">
                                     <p className="item-title">{item.title.longTitle}</p>

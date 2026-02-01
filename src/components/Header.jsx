@@ -27,7 +27,6 @@ const Header = () => {
                                 src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
                                 alt="plus"
                                 className="plus-icon"
-                                referrerPolicy="no-referrer"
                             />
                         </div>
                     </Link>

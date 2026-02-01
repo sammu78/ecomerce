@@ -18,7 +18,6 @@ const ProductCard = ({ product }) => {
                     src={product.url}
                     alt={product.title.shortTitle}
                     className="product-img"
-                    referrerPolicy="no-referrer"
                 />
                 <div className="favorite-icon">
                     <svg width="18" height="18" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg" className="_1l0elc">

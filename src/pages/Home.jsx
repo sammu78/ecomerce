@@ -17,7 +17,6 @@ const Home = () => {
                     src="https://rukminim1.flixcart.com/flap/3376/560/image/d117a62eb5fbb8e1.jpg?q=50"
                     alt="Big Billion Days"
                     className="banner-img"
-                    referrerPolicy="no-referrer"
                 />
             </div>
 
